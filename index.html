@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajiv Maddheshiya Resume</title>
+    <style>
+        :root {
+            /* Light mode colors */
+            --bg-color: #f5f5f7;
+            --text-color: #1d1d1f;
+            --container-bg: #ffffff;
+            --link-color: #0071e3;
+        }
+
+        body.dark {
+            /* Dark mode colors */
+            --bg-color: #1d1d1f;
+            --text-color: #f5f5f7;
+            --container-bg: #2c2c2e;
+            --link-color: #0a84ff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: var(--container-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        h1, h2 {
+            color: var(--text-color);
+        }
+
+        .contact a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .toggle-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--container-bg);
+            color: var(--text-color);
+            border: 1px solid var(--text-color);
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .toggle-button:hover {
+            background: var(--link-color);
+            color: #fff;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills li {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: var(--container-bg);
+            border: 2px solid var(--link-color);
+            border-radius: 5px;
+            color: var(--text-color);
+            font-size: 14px;
+            transition: background-color 0.3s, border 0.3s;
+            white-space: nowrap;
+        }
+
+        .skills li:hover {
+            background-color: var(--link-color);
+            border-color: var(--link-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
+
+    <div class="container">
+        <h1>Rajiv Maddheshiya</h1>
+        <p><strong>Business Development Manager</strong>, Fun N Forest Resort, Sahastradhara, Dehradun</p>
+        <div class="contact">
+            <p>Email: <a href="mailto:madesiarajiv@gmail.com">madesiarajiv@gmail.com</a></p>
+            <p>Contact No: +91 8543945553</p>
+            <p>LinkedIn: <a href="https://in.linkedin.com/in/madesiarajiv">linkedin.com/in/madesiarajiv</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <p><strong>Fun N Forest Resort, Dehradun | Front Office Executive</strong> (Oct 2023 – Present)</p>
+            <ul>
+                <li>Delivered exceptional guest experiences by addressing inquiries, resolving complaints, and ensuring satisfaction with personalized service.</li>
+                <li>Made note of wake-up calls for guests and attended to guest queries with care and tact.</li>
+                <li>Managed reception duties, including reservations, check-in/check-out coordination, and maintaining a welcoming environment.</li>
+                <li>Resolved guest concerns efficiently, enhancing satisfaction and loyalty.</li>
+            </ul>
+
+            <p><strong>Hotel Dream Resort, Panipat | Front Office Executive</strong> (July 2023 – Sep 2023)</p>
+            <ul>
+                <li>Maintained accurate records of daily transactions, ensuring transparency and accountability.</li>
+                <li>Proficient in front-office systems, CRM, and POS software for accurate payment processing.</li>
+                <li>Onboarding on various channels like Justdial, Booking.com, Go-mmt, Hotel.com, Hotelmate, etc.</li>
+                <li>Customer experience enhancement (reviews).</li>
+            </ul>
+
+            <p><strong>Limewood Resort & Restaurant, Kushinagar | Cashier</strong> (Mar 2022 – Feb 2023)</p>
+            <ul>
+                <li>Operated POS System to input orders, process payments, and generate receipts.</li>
+                <li>Maintained accurate records of daily transactions, ensuring transparency and accountability.</li>
+                <li>Prepared monthly sales reports with KPI and forwarded to management.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Deen Dayal Upadhayay University Gorakhpur</strong> (Aug 2020 – July 2023)</p>
+            <ul>
+                <li>Bachelor of Arts in History and Sociology</li>
+                <li>Accredited ++A By NAAC</li>
+                <li>Consecutive First, Second, and Third year topper in the college.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Business Achievement</h2>
+            <ul>
+                <li>At Hotel Dream Resort Increased Google Customer Review Rating (3.7 to 3.9).</li>
+                <li>At Fun N Forest Resort, increased Google Customer Review Rating (3.9 to 4.2).</li>
+            </ul>
+        </div>
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Team Work</li>
+                <li>Negotiation</li>
+                <li>Warm Calling</li>
+                <li>Customer Service</li>
+                <li>Customer Handling</li>
+                <li>MS Office</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const button = document.querySelector('.toggle-button');
+            
+            body.classList.toggle('dark');
+            
+            if (body.classList.contains('dark')) {
+                button.textContent = 'Light Mode';
+            } else {
+                button.textContent = 'Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>

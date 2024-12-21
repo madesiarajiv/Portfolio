@@ -6,7 +6,6 @@
     <title>Rajiv Maddheshiya Resume</title>
     <style>
         :root {
-            /* Light mode colors */
             --bg-color: #f5f5f7;
             --text-color: #1d1d1f;
             --container-bg: #ffffff;
@@ -14,7 +13,6 @@
         }
 
         body.dark {
-            /* Dark mode colors */
             --bg-color: #1d1d1f;
             --text-color: #f5f5f7;
             --container-bg: #2c2c2e;
@@ -32,6 +30,7 @@
         }
 
         .container {
+            position: relative;
             max-width: 800px;
             margin: 20px auto;
             background: var(--container-bg);
@@ -73,6 +72,30 @@
             color: #fff;
         }
 
+        .download-symbol {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--container-bg);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .download-symbol:hover {
+            background-color: var(--link-color);
+        }
+
+        .download-symbol img {
+            width: 24px;
+            height: 24px;
+        }
+
         .skills ul {
             list-style-type: none;
             padding: 0;
@@ -99,12 +122,33 @@
             border-color: var(--link-color);
             color: white;
         }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .toggle-button {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+            .skills li {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
     <button class="toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
 
     <div class="container">
+        <!-- Download Symbol with link -->
+        <a href="https://drive.google.com/file/d/1XWWZcc3Is1PwQ4J8GFqIl_qPRiDHzDuE/view?usp=sharing" class="download-symbol" target="_blank">
+            <img src="/mnt/data/istockphoto-844294300-612x612.jpg" alt="Download Icon">
+        </a>
+
         <h1>Rajiv Maddheshiya</h1>
         <p><strong>Front Office Executive</strong>, Fun N Forest Resort, Sahastradhara, Dehradun</p>
         <div class="contact">

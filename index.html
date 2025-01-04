@@ -3,230 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajiv Maddheshiya Resume</title>
+    <title>Store - Innovative Tech Solutions</title>
     <style>
-        :root {
-            --bg-color: #f5f5f7;
-            --text-color: #1d1d1f;
-            --container-bg: #ffffff;
-            --link-color: #0071e3;
-        }
-
-        body.dark {
-            --bg-color: #1d1d1f;
-            --text-color: #f5f5f7;
-            --container-bg: #2c2c2e;
-            --link-color: #0a84ff;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
         }
-
-        .container {
-            position: relative;
-            max-width: 800px;
-            margin: 20px auto;
-            background: var(--container-bg);
+        header {
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, box-shadow 0.3s;
+            background: linear-gradient(90deg, #f0f0f0, #e2e2e2);
         }
-
-        h1, h2 {
-            color: var(--text-color);
+        header h1 span {
+            color: blue;
         }
-
-        .contact a {
-            color: var(--link-color);
-            text-decoration: none;
+        header h1 span:nth-child(2) {
+            color: purple;
         }
-
-        .contact a:hover {
-            text-decoration: underline;
+        header p {
+            margin: 10px 0;
+            font-size: 1rem;
         }
-
-        .toggle-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--container-bg);
-            color: var(--text-color);
-            border: 1px solid var(--text-color);
-            border-radius: 20px;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .toggle-button:hover {
-            background: var(--link-color);
-            color: #fff;
-        }
-
-        .download-symbol {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+        nav ul {
+            list-style: none;
             display: flex;
-            align-items: center;
             justify-content: center;
-            background-color: var(--container-bg);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-
-        .download-symbol:hover {
-            background-color: var(--link-color);
-        }
-
-        .download-symbol img {
-            width: 24px;
-            height: 24px;
-        }
-
-        .skills ul {
-            list-style-type: none;
-            padding: 0;
+            background-color: #333;
+            padding: 10px 0;
             margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
         }
-
-        .skills li {
-            display: inline-block;
-            padding: 8px 15px;
-            background-color: var(--container-bg);
-            border: 2px solid var(--link-color);
-            border-radius: 5px;
-            color: var(--text-color);
-            font-size: 14px;
-            transition: background-color 0.3s, border 0.3s;
-            white-space: nowrap;
+        nav ul li {
+            margin: 0 15px;
         }
-
-        .skills li:hover {
-            background-color: var(--link-color);
-            border-color: var(--link-color);
+        nav ul li a {
             color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
         }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-
-            .toggle-button {
-                padding: 8px 16px;
-                font-size: 12px;
-            }
-
-            .skills li {
-                padding: 6px 12px;
-                font-size: 12px;
-            }
+        section {
+            margin: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-item h3 {
+            font-size: 1.2rem;
+            margin: 15px 0 10px;
+        }
+        .grid-item p {
+            font-size: 0.9rem;
+            padding: 0 10px 20px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
-    <button class="toggle-button" onclick="toggleDarkMode()">Dark Mode</button>
+    <header>
+        <h1><span>Store.</span> <span>Innovative Tech Solutions.</span></h1>
+        <p>Explore cutting-edge tools and applications to transform your world.</p>
+    </header>
 
-    <div class="container">
-        <!-- Download Symbol with link -->
-        <a href="https://drive.google.com/file/d/1XWWZcc3Is1PwQ4J8GFqIl_qPRiDHzDuE/view?usp=sharing" class="download-symbol" target="_blank">
-            <img src="/mnt/data/istockphoto-844294300-612x612.jpg" alt="Download Icon">
-        </a>
+    <nav>
+        <ul>
+            <li><a href="#">AI</a></li>
+            <li><a href="#">ML</a></li>
+            <li><a href="#">NLP</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Applications</a></li>
+        </ul>
+    </nav>
 
-        <h1>Rajiv Maddheshiya</h1>
-        <p><strong>Front Office Executive</strong>, Fun N Forest Resort, Sahastradhara, Dehradun</p>
-        <div class="contact">
-            <p>Email: <a href="mailto:madesiarajiv@gmail.com">madesiarajiv@gmail.com</a></p>
-            <p>Contact No: +91 8543945553</p>
-            <p>LinkedIn: <a href="https://in.linkedin.com/in/madesiarajiv">linkedin.com/in/madesiarajiv</a></p>
+    <section>
+        <h2 style="text-align: center;">Latest Projects. Empower your journey.</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="https://laptop-price-predictor-3nx9yosjzvwiwyfdiawkjg.streamlit.app/" target="_blank">
+                    <img src="images/laptop-price-predictor.jpg" alt="Laptop Price Predictor">
+                </a>
+                <h3>Laptop Price Predictor</h3>
+                <p>Predict laptop prices based on configurations using machine learning models.</p>
+            </div>
+            <div class="grid-item">
+                <a href="#" target="_blank">
+                    <img src="images/house-price-predictor.jpg" alt="House Price Predictor">
+                </a>
+                <h3>House Price Predictor</h3>
+                <p>Estimate house prices with advanced regression techniques.</p>
+            </div>
+            <div class="grid-item">
+                <a href="https://movie-recommender-system-bot.streamlit.app/" target="_blank">
+                    <img src="images/movie-recommender-system.jpg" alt="Movie Recommender System">
+                </a>
+                <h3>Movie Recommender System</h3>
+                <p>Get personalized movie recommendations with collaborative filtering.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Work Experience</h2>
-            <p><strong>Fun N Forest Resort, Dehradun | Front Office Executive</strong> (Oct 2023 – Present)</p>
-            <ul>
-                <li>Delivered exceptional guest experiences by addressing inquiries, resolving complaints, and ensuring satisfaction with personalized service.</li>
-                <li>Made note of wake-up calls for guests and attended to guest queries with care and tact.</li>
-                <li>Managed reception duties, including reservations, check-in/check-out coordination, and maintaining a welcoming environment.</li>
-                <li>Resolved guest concerns efficiently, enhancing satisfaction and loyalty.</li>
-            </ul>
-
-            <p><strong>Hotel Dream Resort, Panipat | Front Office Executive</strong> (July 2023 – Sep 2023)</p>
-            <ul>
-                <li>Maintained accurate records of daily transactions, ensuring transparency and accountability.</li>
-                <li>Proficient in front-office systems, CRM, and POS software for accurate payment processing.</li>
-                <li>Onboarding on various channels like Justdial, Booking.com, Go-mmt, Hotel.com, Hotelmate, etc.</li>
-                <li>Customer experience enhancement (reviews).</li>
-            </ul>
-
-            <p><strong>Limewood Resort & Restaurant, Kushinagar | Cashier</strong> (Mar 2022 – Feb 2023)</p>
-            <ul>
-                <li>Operated POS System to input orders, process payments, and generate receipts.</li>
-                <li>Maintained accurate records of daily transactions, ensuring transparency and accountability.</li>
-                <li>Prepared monthly sales reports with KPI and forwarded to management.</li>
-            </ul>
+    <section>
+        <h2 style="text-align: center;">Featured Projects. Discover innovation.</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="#" target="_blank">
+                    <img src="images/book-recommender-system.jpg" alt="Book Recommender System">
+                </a>
+                <h3>Book Recommender System</h3>
+                <p>Find your next favorite book based on your reading habits.</p>
+            </div>
+            <div class="grid-item">
+                <a href="#" target="_blank">
+                    <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis">
+                </a>
+                <h3>Sentiment Analysis</h3>
+                <p>Analyze customer sentiments with natural language processing.</p>
+            </div>
+            <div class="grid-item">
+                <a href="#" target="_blank">
+                    <img src="images/text-summarization.jpg" alt="Text Summarization">
+                </a>
+                <h3>Text Summarization</h3>
+                <p>Automatically summarize large texts into concise information.</p>
+            </div>
+            <div class="grid-item">
+                <a href="#" target="_blank">
+                    <img src="images/speech-to-text.jpg" alt="Speech to Text">
+                </a>
+                <h3>Speech to Text</h3>
+                <p>Convert spoken words into accurate text in real time.</p>
+            </div>
+            <div class="grid-item">
+                <a href="#" target="_blank">
+                    <img src="images/text-to-speech.jpg" alt="Text to Speech">
+                </a>
+                <h3>Text to Speech</h3>
+                <p>Generate natural-sounding speech from written text.</p>
+            </div>
+            <div class="grid-item">
+                <a href="#" target="_blank">
+                    <img src="images/cab-price-predictor.jpg" alt="Cab Price Predictor">
+                </a>
+                <h3>Cab Price Predictor</h3>
+                <p>Estimate cab fares based on location, time, and demand.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Deen Dayal Upadhayay University Gorakhpur</strong> (Aug 2020 – July 2023)</p>
-            <ul>
-                <li>Bachelor of Arts in History and Sociology</li>
-                <li>Accredited ++A By NAAC</li>
-                <li>Consecutive First, Second, and Third year topper in the college.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Business Achievement</h2>
-            <ul>
-                <li>At Hotel Dream Resort Increased Google Customer Review Rating (3.7 to 3.9).</li>
-                <li>At Fun N Forest Resort, increased Google Customer Review Rating (3.9 to 4.2).</li>
-            </ul>
-        </div>
-
-        <div class="section skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Team Work</li>
-                <li>Negotiation</li>
-                <li>Warm Calling</li>
-                <li>Customer Service</li>
-                <li>Customer Handling</li>
-                <li>MS Office</li>
-            </ul>
-        </div>
-    </div>
-
-    <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            const button = document.querySelector('.toggle-button');
-            
-            body.classList.toggle('dark');
-            
-            if (body.classList.contains('dark')) {
-                button.textContent = 'Light Mode';
-            } else {
-                button.textContent = 'Dark Mode';
-            }
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 Innovative Tech Store. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
